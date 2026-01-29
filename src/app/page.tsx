@@ -24,9 +24,9 @@ const FloatingParticles = () => {
           }}
         />
       ))}
-      <div className="orb w-96 h-96 bg-cmg-green -top-48 -left-48" />
-      <div className="orb w-80 h-80 bg-neon-blue top-1/3 -right-40" style={{ animationDelay: '2s' }} />
-      <div className="orb w-64 h-64 bg-cyber-purple bottom-20 left-1/4" style={{ animationDelay: '4s' }} />
+      <div className="orb w-96 h-96 bg-blue-500 -top-48 -left-48" />
+      <div className="orb w-80 h-80 bg-teal-500 top-1/3 -right-40" style={{ animationDelay: '2s' }} />
+      <div className="orb w-64 h-64 bg-rose-500 bottom-20 left-1/4" style={{ animationDelay: '4s' }} />
     </div>
   )
 }
@@ -115,7 +115,7 @@ const HeroSection = () => {
                 className="glass-card px-6 py-4 rounded-xl flex items-center gap-4"
               >
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cmg-green/20 to-neon-blue/20 flex items-center justify-center">
-                  <item.icon className="w-6 h-6 text-emerald-400" />
+                  <item.icon className="w-6 h-6 text-blue-400" />
                 </div>
                 <div className="text-left">
                   <div className="font-semibold">{item.label}</div>
@@ -132,7 +132,7 @@ const HeroSection = () => {
           transition={{ delay: 1 }}
           className="animate-bounce"
         >
-          <ChevronDown className="w-8 h-8 mx-auto text-emerald-400" />
+          <ChevronDown className="w-8 h-8 mx-auto text-blue-400" />
         </motion.div>
       </div>
     </section>
@@ -185,7 +185,7 @@ const FeatureCard = ({ ticketId, title, description, status, details, image }: F
         {details && details.length > 0 && (
           <button
             onClick={() => setExpanded(!expanded)}
-            className="text-emerald-400 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all"
+            className="text-blue-400 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all"
           >
             {expanded ? 'Show less' : 'View details'}
             <ChevronDown className={`w-4 h-4 transition-transform ${expanded ? 'rotate-180' : ''}`} />
@@ -203,7 +203,7 @@ const FeatureCard = ({ ticketId, title, description, status, details, image }: F
               <ul className="mt-4 space-y-2 text-sm text-gray-300">
                 {details.map((detail, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
                     <span>{detail}</span>
                   </li>
                 ))}
@@ -247,7 +247,7 @@ const SectionHeader = ({ icon: Icon, title, description, id }: SectionHeaderProp
       id={id}
     >
       <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cmg-green/20 to-neon-blue/20 flex items-center justify-center mx-auto mb-6 neon-border">
-        <Icon className="w-8 h-8 text-emerald-400" />
+        <Icon className="w-8 h-8 text-blue-400" />
       </div>
       <h2 className="text-4xl font-bold mb-4">{title}</h2>
       <p className="text-gray-300 max-w-2xl mx-auto">{description}</p>
@@ -308,7 +308,7 @@ const SmartAppSection = () => {
         >
           <div className="glass-card rounded-2xl p-8">
             <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
-              <Lock className="w-5 h-5 text-emerald-400" />
+              <Lock className="w-5 h-5 text-blue-400" />
               Consent Flow Preview
             </h3>
             <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-600">
@@ -322,18 +322,18 @@ const SmartAppSection = () => {
                   <div className="flex gap-4">
                     {['Mobile', 'Home', 'Work'].map((type, i) => (
                       <label key={type} className="flex items-center gap-2 cursor-pointer">
-                        <div className={`w-4 h-4 rounded-full border-2 ${i === 0 ? 'bg-cmg-green border-cmg-green' : 'border-gray-500'}`} />
+                        <div className={`w-4 h-4 rounded-full border-2 ${i === 0 ? 'bg-blue-500 border-cmg-green' : 'border-gray-500'}`} />
                         <span className="text-sm">{type}</span>
                       </label>
                     ))}
                   </div>
                 </div>
                 <div className="flex items-start gap-3 bg-gray-800/50 rounded-lg p-4 border border-cmg-green/20">
-                  <div className="w-5 h-5 rounded bg-cmg-green flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded bg-blue-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-white" />
                   </div>
                   <p className="text-sm text-gray-300 leading-relaxed">
-                    By entering my mobile number or other phone number and checking the box, I agree to receiving text and voice communications (including using autodialed or prerecorded messages) related to reminders, offers, and other information from CMG Mortgage, Inc. dba CMG Home Loans... View our <span className="text-emerald-400 underline">terms</span> and <span className="text-emerald-400 underline">Privacy Policy</span>.
+                    By entering my mobile number or other phone number and checking the box, I agree to receiving text and voice communications (including using autodialed or prerecorded messages) related to reminders, offers, and other information from CMG Mortgage, Inc. dba CMG Home Loans... View our <span className="text-blue-400 underline">terms</span> and <span className="text-blue-400 underline">Privacy Policy</span>.
                   </p>
                 </div>
               </div>
@@ -423,7 +423,7 @@ const PortalTasksSection = () => {
         >
           <div className="glass-card rounded-2xl p-8">
             <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
-              <FileCheck className="w-5 h-5 text-emerald-400" />
+              <FileCheck className="w-5 h-5 text-blue-400" />
               Task Completion Flow
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
@@ -439,12 +439,12 @@ const PortalTasksSection = () => {
                     'border-yellow-500/30'
                   }`}>
                     <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                      step.color === 'green' ? 'bg-cmg-green/20' :
-                      step.color === 'blue' ? 'bg-neon-blue/20' :
+                      step.color === 'green' ? 'bg-blue-500/20' :
+                      step.color === 'blue' ? 'bg-teal-500/20' :
                       'bg-yellow-500/20'
                     }`}>
                       <step.icon className={`w-6 h-6 ${
-                        step.color === 'green' ? 'text-emerald-400' :
+                        step.color === 'green' ? 'text-blue-400' :
                         step.color === 'blue' ? 'text-neon-blue' :
                         'text-yellow-500'
                       }`} />
@@ -529,7 +529,7 @@ const HomePortalSection = () => {
         >
           <div className="glass-card rounded-2xl p-8">
             <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
-              <Eye className="w-5 h-5 text-emerald-400" />
+              <Eye className="w-5 h-5 text-blue-400" />
               Loan Number Masking Demo
             </h3>
             <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-600">
@@ -537,14 +537,14 @@ const HomePortalSection = () => {
                 <div>
                   <p className="text-sm text-gray-300 mb-1">Mortgage Account</p>
                   <div className="flex items-center gap-3">
-                    <HomeIcon className="w-8 h-8 text-emerald-400" />
+                    <HomeIcon className="w-8 h-8 text-blue-400" />
                     <div>
                       <p className="font-semibold">1685 Center Star Rd, Columbia, TN</p>
                       <p className="text-sm text-gray-300 flex items-center gap-2">
                         Loan# {showLoan ? 'RWE54320000001' : '••••••0001'}
                         <button
                           onClick={() => setShowLoan(!showLoan)}
-                          className="text-emerald-400 hover:text-neon-blue transition-colors"
+                          className="text-blue-400 hover:text-neon-blue transition-colors"
                         >
                           {showLoan ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                         </button>
@@ -553,7 +553,7 @@ const HomePortalSection = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-2xl font-bold text-emerald-400">$635,000.00</p>
+                  <p className="text-2xl font-bold text-blue-400">$635,000.00</p>
                   <p className="text-sm text-gray-300">Loan Balance</p>
                 </div>
               </div>
@@ -683,7 +683,7 @@ const ServicingSection = () => {
         >
           <div className="glass-card rounded-2xl p-8">
             <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
-              <Bell className="w-5 h-5 text-emerald-400" />
+              <Bell className="w-5 h-5 text-blue-400" />
               Tax Statement Banners
             </h3>
             <div className="space-y-4">
@@ -695,9 +695,9 @@ const ServicingSection = () => {
                   <strong>Your complete Form 1098 tax statement is being prepared.</strong> It will be mailed to you and available in the Documents Center by January 31.
                 </p>
               </div>
-              <div className="bg-cmg-green/10 border border-cmg-green/30 rounded-lg p-4 flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-cmg-green/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-4 h-4 text-emerald-400" />
+              <div className="bg-blue-500/10 border border-cmg-green/30 rounded-lg p-4 flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Check className="w-4 h-4 text-blue-400" />
                 </div>
                 <div className="text-sm text-green-100">
                   <p><strong>Your Form 1098 tax statement is ready.</strong> View or download it now from the Documents Center. A printed copy has also been mailed.</p>
@@ -779,7 +779,7 @@ const TeamSection = () => {
               className="glass-card rounded-2xl p-6"
             >
               <h3 className={`text-lg font-semibold mb-4 ${
-                team.color === 'cmg-green' ? 'text-emerald-400' :
+                team.color === 'cmg-green' ? 'text-blue-400' :
                 team.color === 'neon-blue' ? 'text-neon-blue' :
                 team.color === 'cyber-purple' ? 'text-cyber-purple' :
                 'text-yellow-400'
@@ -790,9 +790,9 @@ const TeamSection = () => {
                 {team.members.map((member) => (
                   <div key={member.name} className="flex items-center gap-3">
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                      team.color === 'cmg-green' ? 'bg-cmg-green/20 text-emerald-400' :
-                      team.color === 'neon-blue' ? 'bg-neon-blue/20 text-neon-blue' :
-                      team.color === 'cyber-purple' ? 'bg-cyber-purple/20 text-cyber-purple' :
+                      team.color === 'cmg-green' ? 'bg-blue-500/20 text-blue-400' :
+                      team.color === 'neon-blue' ? 'bg-teal-500/20 text-neon-blue' :
+                      team.color === 'cyber-purple' ? 'bg-rose-500/20 text-cyber-purple' :
                       'bg-yellow-400/20 text-yellow-400'
                     }`}>
                       {member.name.split(' ').map(n => n[0]).join('')}
