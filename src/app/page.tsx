@@ -296,6 +296,7 @@ const SmartAppSection = () => {
               'Privacy Policy link opens in new tab',
               'Checkbox required for consent acknowledgment',
             ]}
+            image="/screenshots/screenshot_4_2.png"
           />
         </div>
 
@@ -370,6 +371,7 @@ const PortalTasksSection = () => {
               'Tasks show borrower name assignment',
               'Completed date tracking',
             ]}
+            image="/screenshots/screenshot_5_2.jpeg"
           />
 
           <FeatureCard
@@ -384,6 +386,7 @@ const PortalTasksSection = () => {
               'Uses EPS Disclosure data API response',
               '"Done" button to return to tasks',
             ]}
+            image="/screenshots/screenshot_6_2.jpeg"
           />
 
           <FeatureCard
@@ -411,6 +414,7 @@ const PortalTasksSection = () => {
               'Document Type List based on associated request',
               'Clear Docs API returns DocType per document',
             ]}
+            image="/screenshots/screenshot_8_2.png"
           />
         </div>
 
@@ -492,6 +496,7 @@ const HomePortalSection = () => {
               'Works on Documents page',
               'Icon changes state based on visibility',
             ]}
+            image="/screenshots/screenshot_9_2.png"
           />
 
           <FeatureCard
@@ -589,6 +594,7 @@ const ServicingSection = () => {
               'States availability in Documents Center by Jan 31',
               'Notes mailing will also be sent',
             ]}
+            image="/screenshots/screenshot_10_2.png"
           />
 
           <FeatureCard
@@ -603,6 +609,7 @@ const ServicingSection = () => {
               'Important notice about multiple 1098s',
               'Instructions to use most recent form',
             ]}
+            image="/screenshots/screenshot_11_2.jpeg"
           />
 
           <FeatureCard
@@ -615,6 +622,7 @@ const ServicingSection = () => {
               'Applies to primary dashboard cards',
               'Works for Cenlar and LoanServ loans',
             ]}
+            image="/screenshots/screenshot_12_2.jpeg"
           />
 
           <FeatureCard
@@ -659,6 +667,7 @@ const ServicingSection = () => {
               'Sets expectation: ~10 business days from close',
               'Error state shows red alert with refresh suggestion',
             ]}
+            image="/screenshots/screenshot_14_2.png"
           />
 
           <FeatureCard
