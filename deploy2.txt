@@ -1,0 +1,24 @@
+﻿node.exe : Vercel CLI 48.7.1
+At C:\Users\Mark Hansen\AppData\Roaming\npm\vercel.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/vercel/dist/vc.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 48.7.1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Retrieving projectΓÇª
+Deploying cmgprojects/cx-sprint-release-2025
+Uploading [--------------------] (0.0B/104.3KB)
+Uploading [======--------------] (32.0KB/104.3KB)
+Uploading [============--------] (64.4KB/104.3KB)
+Uploading [===============-----] (80.4KB/104.3KB)
+Uploading [====================] (104.3KB/104.3KB)
+Inspect: https://vercel.com/cmgprojects/cx-sprint-release-2025/BzdPPbJCCoF2zJhtV3YPayE4ALyZ [1s]
+Production: https://cx-sprint-release-2025-gj12nb3az-cmgprojects.vercel.app [1s]
+Building
+Building
+Completing
+
+Common next commands:
+- `vercel inspect cx-sprint-release-2025-gj12nb3az-cmgprojects.vercel.app --logs`
+- `vercel redeploy cx-sprint-release-2025-gj12nb3az-cmgprojects.vercel.app`
+https://cx-sprint-release-2025-gj12nb3az-cmgprojects.vercel.app
