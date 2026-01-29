@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  Smartphone, Home, FileText, Shield, Users, ChevronDown, Check,
+  Smartphone, Home as HomeIcon, FileText, Shield, Users, ChevronDown, Check,
   Eye, EyeOff, Calculator, Bell, Upload, Search, FileCheck, X,
   Sparkles, Zap, Lock, Code, ExternalLink
 } from 'lucide-react'
@@ -104,7 +104,7 @@ const HeroSection = () => {
             {[
               { icon: Smartphone, label: 'SmartApp', count: '2 Features' },
               { icon: FileText, label: 'Portal Tasks', count: '4 Features' },
-              { icon: Home, label: 'Home Portal', count: '3 Features' },
+              { icon: HomeIcon, label: 'Home Portal', count: '3 Features' },
               { icon: Shield, label: 'Servicing', count: '7 Features' },
             ].map((item, i) => (
               <motion.div
@@ -473,7 +473,7 @@ const HomePortalSection = () => {
     <section className="py-24 relative">
       <div className="max-w-6xl mx-auto px-6">
         <SectionHeader
-          icon={Home}
+          icon={HomeIcon}
           title="Home Portal"
           description="Enhanced security and improved calculator accuracy"
           id="home-portal-header"
@@ -537,7 +537,7 @@ const HomePortalSection = () => {
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Mortgage Account</p>
                   <div className="flex items-center gap-3">
-                    <Home className="w-8 h-8 text-cmg-green" />
+                    <HomeIcon className="w-8 h-8 text-cmg-green" />
                     <div>
                       <p className="font-semibold">1685 Center Star Rd, Columbia, TN</p>
                       <p className="text-sm text-gray-400 flex items-center gap-2">

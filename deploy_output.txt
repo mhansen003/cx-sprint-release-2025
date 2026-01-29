@@ -1,0 +1,1007 @@
+﻿node.exe : Vercel CLI 48.7.1
+At C:\Users\Mark Hansen\AppData\Roaming\npm\vercel.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/vercel/dist/vc.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Vercel CLI 48.7.1:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading scopesΓÇª
+Searching for existing projectsΓÇª
+Local settings detected in vercel.json:
+- Build Command: npm run build
+- Framework: nextjs
+- Output Directory: .next
+Merging default Project Settings for Next.js. Previously listed overrides are prioritized.
+Auto-detected Project Settings (Next.js):
+- Development Command: next dev --port $PORT
+- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+Linked to cmgprojects/cx-sprint-release-2025 (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/mhansen003/cx-sprint-release-2025
+> Connected
+Deploying cmgprojects/cx-sprint-release-2025
+Uploading [--------------------] (0.0B/41.3KB)
+Uploading [===========---------] (23.0KB/41.3KB)
+Uploading [===========---------] (24.0KB/41.3KB)
+Uploading [===================-] (40.8KB/41.3KB)
+Uploading [====================] (41.3KB/41.3KB)
+Inspect: https://vercel.com/cmgprojects/cx-sprint-release-2025/3JMyvGuqvSLWqtKDLtYgEYukxkvn [2s]
+Production: https://cx-sprint-release-2025-ilqrquade-cmgprojects.vercel.app [2s]
+Building
+Building
+2026-01-29T05:18:11.321Z  Running build in Washington, D.C., USA (East) ΓÇô iad1
+2026-01-29T05:18:11.322Z  Build machine configuration: 4 cores, 8 GB
+2026-01-29T05:18:11.483Z  Retrieving list of deployment files...
+2026-01-29T05:18:11.486Z  Previous build caches not available.
+2026-01-29T05:18:12.068Z  Downloading 13 deployment files...
+2026-01-29T05:18:12.618Z  Running "vercel build"
+2026-01-29T05:18:13.541Z  Vercel CLI 50.5.2
+2026-01-29T05:18:13.812Z  Installing dependencies...
+2026-01-29T05:18:25.289Z  
+2026-01-29T05:18:25.289Z  added 109 packages in 11s
+2026-01-29T05:18:25.289Z  
+2026-01-29T05:18:25.289Z  24 packages are looking for funding
+2026-01-29T05:18:25.289Z    run `npm fund` for details
+2026-01-29T05:18:25.345Z  Detected Next.js version: 14.2.35
+2026-01-29T05:18:25.346Z  Running "npm run build"
+2026-01-29T05:18:25.446Z  
+2026-01-29T05:18:25.446Z  > cx-sprint-release-2025@1.0.0 build
+2026-01-29T05:18:25.446Z  > next build
+2026-01-29T05:18:25.446Z  
+2026-01-29T05:18:26.028Z  Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-01-29T05:18:26.028Z  This information is used to shape Next.js' roadmap and prioritize features.
+2026-01-29T05:18:26.028Z  You can learn more, including how to opt-out if you'd not like to participate in this 
+anonymous program, by visiting the following URL:
+2026-01-29T05:18:26.028Z  https://nextjs.org/telemetry
+2026-01-29T05:18:26.028Z  
+2026-01-29T05:18:26.082Z    Γû▓ Next.js 14.2.35
+2026-01-29T05:18:26.082Z  
+2026-01-29T05:18:26.096Z     Creating an optimized production build ...
+2026-01-29T05:18:29.392Z  Failed to compile.
+2026-01-29T05:18:29.393Z  
+2026-01-29T05:18:29.393Z  ./src/app/page.tsx
+2026-01-29T05:18:29.393Z  Error: 
+2026-01-29T05:18:29.393Z    [31mx[0m the name `Home` is defined multiple times
+2026-01-29T05:18:29.394Z       ,-[[36;1;4m/vercel/path0/src/app/page.tsx[0m:3:1]
+2026-01-29T05:18:29.394Z   [2m  3[0m | import { useState, useEffect } from 'react'
+2026-01-29T05:18:29.394Z   [2m  4[0m | import { motion, AnimatePresence } from 'framer-motion'
+2026-01-29T05:18:29.394Z   [2m  5[0m | import {
+2026-01-29T05:18:29.394Z   [2m  6[0m |   Smartphone, Home, FileText, Shield, Users, ChevronDown, Check,
+2026-01-29T05:18:29.394Z       : [31;1m              ^^|^[0m
+2026-01-29T05:18:29.394Z       :                 [31;1m`-- [31;1mprevious definition of `Home` here[0m[0m
+2026-01-29T05:18:29.394Z   [2m  7[0m |   Eye, EyeOff, Calculator, Bell, Upload, Search, FileCheck, X,
+2026-01-29T05:18:29.394Z   [2m  8[0m |   Sparkles, Zap, Lock, Code, ExternalLink
+2026-01-29T05:18:29.394Z   [2m  9[0m | } from 'lucide-react'
+2026-01-29T05:18:29.395Z   [2m 10[0m | 
+2026-01-29T05:18:29.395Z   [2m 11[0m | // Floating particles component
+2026-01-29T05:18:29.395Z   [2m 12[0m | const FloatingParticles = () => {
+2026-01-29T05:18:29.395Z   [2m 13[0m |   return (
+2026-01-29T05:18:29.395Z   [2m 14[0m |     <div className="fixed inset-0 pointer-events-none overflow-hidden">
+2026-01-29T05:18:29.395Z   [2m 15[0m |       {[...Array(20)].map((_, i) => (
+2026-01-29T05:18:29.395Z   [2m 16[0m |         <div
+2026-01-29T05:18:29.395Z   [2m 17[0m |           key={i}
+2026-01-29T05:18:29.395Z   [2m 18[0m |           className="particle"
+2026-01-29T05:18:29.395Z   [2m 19[0m |           style={{
+2026-01-29T05:18:29.396Z   [2m 20[0m |             left: `${Math.random() * 100}%`,
+2026-01-29T05:18:29.396Z   [2m 21[0m |             top: `${Math.random() * 100}%`,
+2026-01-29T05:18:29.396Z   [2m 22[0m |             animationDelay: `${Math.random() * 6}s`,
+2026-01-29T05:18:29.396Z   [2m 23[0m |             animationDuration: `${6 + Math.random() * 4}s`,
+2026-01-29T05:18:29.396Z   [2m 24[0m |           }}
+2026-01-29T05:18:29.396Z   [2m 25[0m |         />
+2026-01-29T05:18:29.396Z   [2m 26[0m |       ))}
+2026-01-29T05:18:29.396Z   [2m 27[0m |       <div className="orb w-96 h-96 bg-cmg-green -top-48 -left-48" />
+2026-01-29T05:18:29.396Z   [2m 28[0m |       <div className="orb w-80 h-80 bg-neon-blue top-1/3 -right-40" style={{ 
+animationDelay: '2s' }} />
+2026-01-29T05:18:29.396Z   [2m 29[0m |       <div className="orb w-64 h-64 bg-cyber-purple bottom-20 left-1/4" 
+style={{ animationDelay: '4s' }} />
+2026-01-29T05:18:29.396Z   [2m 30[0m |     </div>
+2026-01-29T05:18:29.397Z   [2m 31[0m |   )
+2026-01-29T05:18:29.397Z   [2m 32[0m | }
+2026-01-29T05:18:29.397Z   [2m 33[0m | 
+2026-01-29T05:18:29.397Z   [2m 34[0m | // Navigation component
+2026-01-29T05:18:29.397Z   [2m 35[0m | const Navigation = () => {
+2026-01-29T05:18:29.397Z   [2m 36[0m |   const [scrolled, setScrolled] = useState(false)
+2026-01-29T05:18:29.397Z   [2m 37[0m | 
+2026-01-29T05:18:29.397Z   [2m 38[0m |   useEffect(() => {
+2026-01-29T05:18:29.397Z   [2m 39[0m |     const handleScroll = () => setScrolled(window.scrollY > 50)
+2026-01-29T05:18:29.397Z   [2m 40[0m |     window.addEventListener('scroll', handleScroll)
+2026-01-29T05:18:29.397Z   [2m 41[0m |     return () => window.removeEventListener('scroll', handleScroll)
+2026-01-29T05:18:29.397Z   [2m 42[0m |   }, [])
+2026-01-29T05:18:29.397Z   [2m 43[0m | 
+2026-01-29T05:18:29.397Z   [2m 44[0m |   return (
+2026-01-29T05:18:29.398Z   [2m 45[0m |     <motion.nav
+2026-01-29T05:18:29.398Z   [2m 46[0m |       initial={{ y: -100 }}
+2026-01-29T05:18:29.398Z   [2m 47[0m |       animate={{ y: 0 }}
+2026-01-29T05:18:29.398Z   [2m 48[0m |       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+${
+2026-01-29T05:18:29.398Z   [2m 49[0m |         scrolled ? 'glass py-3' : 'bg-transparent py-6'
+2026-01-29T05:18:29.398Z   [2m 50[0m |       }`}
+2026-01-29T05:18:29.398Z   [2m 51[0m |     >
+2026-01-29T05:18:29.398Z   [2m 52[0m |       <div className="max-w-7xl mx-auto px-6 flex items-center 
+justify-between">
+2026-01-29T05:18:29.398Z   [2m 53[0m |         <div className="flex items-center gap-3">
+2026-01-29T05:18:29.399Z   [2m 54[0m |           <div className="w-10 h-10 rounded-lg bg-gradient-to-br 
+from-cmg-green to-neon-blue flex items-center justify-center font-bold text-white">
+2026-01-29T05:18:29.399Z   [2m 55[0m |             CX
+2026-01-29T05:18:29.399Z   [2m 56[0m |           </div>
+2026-01-29T05:18:29.399Z   [2m 57[0m |           <span className="font-semibold text-lg hidden sm:block">Sprint 
+Release</span>
+2026-01-29T05:18:29.399Z   [2m 58[0m |         </div>
+2026-01-29T05:18:29.399Z   [2m 59[0m |         <div className="flex items-center gap-2">
+2026-01-29T05:18:29.399Z   [2m 60[0m |           {['SmartApp', 'Portal', 'Servicing', 'Team'].map((item) => (
+2026-01-29T05:18:29.400Z   [2m 61[0m |             <a
+2026-01-29T05:18:29.400Z   [2m 62[0m |               key={item}
+2026-01-29T05:18:29.400Z   [2m 63[0m |               href={`#${item.toLowerCase()}`}
+2026-01-29T05:18:29.400Z   [2m 64[0m |               className="nav-link text-sm text-gray-300 hover:text-white"
+2026-01-29T05:18:29.403Z   [2m 65[0m |             >
+2026-01-29T05:18:29.403Z   [2m 66[0m |               {item}
+2026-01-29T05:18:29.403Z   [2m 67[0m |             </a>
+2026-01-29T05:18:29.403Z   [2m 68[0m |           ))}
+2026-01-29T05:18:29.403Z   [2m 69[0m |         </div>
+2026-01-29T05:18:29.403Z   [2m 70[0m |       </div>
+2026-01-29T05:18:29.403Z   [2m 71[0m |     </motion.nav>
+2026-01-29T05:18:29.403Z   [2m 72[0m |   )
+2026-01-29T05:18:29.403Z   [2m 73[0m | }
+2026-01-29T05:18:29.403Z   [2m 74[0m | 
+2026-01-29T05:18:29.403Z   [2m 75[0m | // Hero Section
+2026-01-29T05:18:29.404Z   [2m 76[0m | const HeroSection = () => {
+2026-01-29T05:18:29.404Z   [2m 77[0m |   return (
+2026-01-29T05:18:29.404Z   [2m 78[0m |     <section className="min-h-screen flex items-center justify-center 
+relative overflow-hidden pt-20">
+2026-01-29T05:18:29.404Z   [2m 79[0m |       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+2026-01-29T05:18:29.404Z   [2m 80[0m |         <motion.div
+2026-01-29T05:18:29.404Z   [2m 81[0m |           initial={{ opacity: 0, y: 30 }}
+2026-01-29T05:18:29.404Z   [2m 82[0m |           animate={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.404Z   [2m 83[0m |           transition={{ duration: 0.8 }}
+2026-01-29T05:18:29.404Z   [2m 84[0m |         >
+2026-01-29T05:18:29.404Z   [2m 85[0m |           <div className="flex items-center justify-center gap-3 mb-6">
+2026-01-29T05:18:29.404Z   [2m 86[0m |             <span className="feature-badge px-4 py-1.5 rounded-full text-sm 
+font-medium">
+2026-01-29T05:18:29.404Z   [2m 87[0m |               <Sparkles className="inline w-4 h-4 mr-1" />
+2026-01-29T05:18:29.404Z   [2m 88[0m |               Sprint 2026.01.28
+2026-01-29T05:18:29.404Z   [2m 89[0m |             </span>
+2026-01-29T05:18:29.404Z   [2m 90[0m |           </div>
+2026-01-29T05:18:29.404Z   [2m 91[0m | 
+2026-01-29T05:18:29.405Z   [2m 92[0m |           <h1 className="text-5xl md:text-7xl font-bold mb-6">
+2026-01-29T05:18:29.405Z   [2m 93[0m |             <span className="gradient-text">Consumer Experience</span>
+2026-01-29T05:18:29.405Z   [2m 94[0m |             <br />
+2026-01-29T05:18:29.405Z   [2m 95[0m |             <span className="text-white">Release Notes</span>
+2026-01-29T05:18:29.405Z   [2m 96[0m |           </h1>
+2026-01-29T05:18:29.405Z   [2m 97[0m | 
+2026-01-29T05:18:29.405Z   [2m 98[0m |           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+2026-01-29T05:18:29.405Z   [2m 99[0m |             Delivering enhancements across SmartApp, Home Portal tasks, and 
+servicing functionalityΓÇö
+2026-01-29T05:18:29.405Z   [2m100[0m |             focusing on regulatory compliance, user experience improvements, 
+and document management.
+2026-01-29T05:18:29.405Z   [2m101[0m |           </p>
+2026-01-29T05:18:29.405Z   [2m102[0m | 
+2026-01-29T05:18:29.405Z   [2m103[0m |           <div className="flex flex-wrap justify-center gap-4 mb-16">
+2026-01-29T05:18:29.405Z   [2m104[0m |             {[
+2026-01-29T05:18:29.405Z   [2m105[0m |               { icon: Smartphone, label: 'SmartApp', count: '2 Features' },
+2026-01-29T05:18:29.405Z   [2m106[0m |               { icon: FileText, label: 'Portal Tasks', count: '4 Features' },
+2026-01-29T05:18:29.405Z   [2m107[0m |               { icon: Home, label: 'Home Portal', count: '3 Features' },
+2026-01-29T05:18:29.406Z   [2m108[0m |               { icon: Shield, label: 'Servicing', count: '7 Features' },
+2026-01-29T05:18:29.406Z   [2m109[0m |             ].map((item, i) => (
+2026-01-29T05:18:29.406Z   [2m110[0m |               <motion.div
+2026-01-29T05:18:29.406Z   [2m111[0m |                 key={item.label}
+2026-01-29T05:18:29.406Z   [2m112[0m |                 initial={{ opacity: 0, y: 20 }}
+2026-01-29T05:18:29.406Z   [2m113[0m |                 animate={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.406Z   [2m114[0m |                 transition={{ delay: 0.2 + i * 0.1 }}
+2026-01-29T05:18:29.406Z   [2m115[0m |                 className="glass-card px-6 py-4 rounded-xl flex items-center 
+gap-4"
+2026-01-29T05:18:29.406Z   [2m116[0m |               >
+2026-01-29T05:18:29.406Z   [2m117[0m |                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br 
+from-cmg-green/20 to-neon-blue/20 flex items-center justify-center">
+2026-01-29T05:18:29.406Z   [2m118[0m |                   <item.icon className="w-6 h-6 text-cmg-green" />
+2026-01-29T05:18:29.406Z   [2m119[0m |                 </div>
+2026-01-29T05:18:29.406Z   [2m120[0m |                 <div className="text-left">
+2026-01-29T05:18:29.406Z   [2m121[0m |                   <div className="font-semibold">{item.label}</div>
+2026-01-29T05:18:29.406Z   [2m122[0m |                   <div className="text-sm text-gray-400">{item.count}</div>
+2026-01-29T05:18:29.406Z   [2m123[0m |                 </div>
+2026-01-29T05:18:29.406Z   [2m124[0m |               </motion.div>
+2026-01-29T05:18:29.407Z   [2m125[0m |             ))}
+2026-01-29T05:18:29.407Z   [2m126[0m |           </div>
+2026-01-29T05:18:29.407Z   [2m127[0m |         </motion.div>
+2026-01-29T05:18:29.407Z   [2m128[0m | 
+2026-01-29T05:18:29.407Z   [2m129[0m |         <motion.div
+2026-01-29T05:18:29.407Z   [2m130[0m |           initial={{ opacity: 0 }}
+2026-01-29T05:18:29.407Z   [2m131[0m |           animate={{ opacity: 1 }}
+2026-01-29T05:18:29.407Z   [2m132[0m |           transition={{ delay: 1 }}
+2026-01-29T05:18:29.407Z   [2m133[0m |           className="animate-bounce"
+2026-01-29T05:18:29.407Z   [2m134[0m |         >
+2026-01-29T05:18:29.407Z   [2m135[0m |           <ChevronDown className="w-8 h-8 mx-auto text-cmg-green" />
+2026-01-29T05:18:29.407Z   [2m136[0m |         </motion.div>
+2026-01-29T05:18:29.407Z   [2m137[0m |       </div>
+2026-01-29T05:18:29.408Z   [2m138[0m |     </section>
+2026-01-29T05:18:29.408Z   [2m139[0m |   )
+2026-01-29T05:18:29.408Z   [2m140[0m | }
+2026-01-29T05:18:29.408Z   [2m141[0m | 
+2026-01-29T05:18:29.408Z   [2m142[0m | // Feature Card Component
+2026-01-29T05:18:29.408Z   [2m143[0m | interface FeatureCardProps {
+2026-01-29T05:18:29.408Z   [2m144[0m |   ticketId: string
+2026-01-29T05:18:29.408Z   [2m145[0m |   title: string
+2026-01-29T05:18:29.408Z   [2m146[0m |   description: string
+2026-01-29T05:18:29.408Z   [2m147[0m |   status: 'new' | 'enhanced' | 'fix'
+2026-01-29T05:18:29.408Z   [2m148[0m |   details?: string[]
+2026-01-29T05:18:29.408Z   [2m149[0m |   image?: string
+2026-01-29T05:18:29.409Z   [2m150[0m | }
+2026-01-29T05:18:29.409Z   [2m151[0m | 
+2026-01-29T05:18:29.409Z   [2m152[0m | const FeatureCard = ({ ticketId, title, description, status, details, image 
+}: FeatureCardProps) => {
+2026-01-29T05:18:29.409Z   [2m153[0m |   const [expanded, setExpanded] = useState(false)
+2026-01-29T05:18:29.409Z   [2m154[0m | 
+2026-01-29T05:18:29.409Z   [2m155[0m |   const statusStyles = {
+2026-01-29T05:18:29.409Z   [2m156[0m |     new: 'status-new',
+2026-01-29T05:18:29.409Z   [2m157[0m |     enhanced: 'status-enhanced',
+2026-01-29T05:18:29.409Z   [2m158[0m |     fix: 'status-fix',
+2026-01-29T05:18:29.409Z   [2m159[0m |   }
+2026-01-29T05:18:29.409Z   [2m160[0m | 
+2026-01-29T05:18:29.409Z   [2m161[0m |   const statusLabels = {
+2026-01-29T05:18:29.409Z   [2m162[0m |     new: 'NEW',
+2026-01-29T05:18:29.410Z   [2m163[0m |     enhanced: 'ENHANCED',
+2026-01-29T05:18:29.410Z   [2m164[0m |     fix: 'FIX',
+2026-01-29T05:18:29.410Z   [2m165[0m |   }
+2026-01-29T05:18:29.410Z   [2m166[0m | 
+2026-01-29T05:18:29.410Z   [2m167[0m |   return (
+2026-01-29T05:18:29.410Z   [2m168[0m |     <motion.div
+2026-01-29T05:18:29.411Z   [2m169[0m |       layout
+2026-01-29T05:18:29.411Z   [2m170[0m |       className="glass-card rounded-2xl overflow-hidden"
+2026-01-29T05:18:29.411Z   [2m171[0m |     >
+2026-01-29T05:18:29.411Z   [2m172[0m |       <div className="p-6">
+2026-01-29T05:18:29.411Z   [2m173[0m |         <div className="flex items-start justify-between gap-4 mb-4">
+2026-01-29T05:18:29.411Z   [2m174[0m |           <div className="flex items-center gap-3">
+2026-01-29T05:18:29.412Z   [2m175[0m |             <span className={`${statusStyles[status]} px-3 py-1 rounded-full 
+text-xs font-bold`}>
+2026-01-29T05:18:29.412Z   [2m176[0m |               {statusLabels[status]}
+2026-01-29T05:18:29.412Z   [2m177[0m |             </span>
+2026-01-29T05:18:29.412Z   [2m178[0m |             <span className="ticket-id">#{ticketId}</span>
+2026-01-29T05:18:29.412Z   [2m179[0m |           </div>
+2026-01-29T05:18:29.412Z   [2m180[0m |         </div>
+2026-01-29T05:18:29.412Z   [2m181[0m | 
+2026-01-29T05:18:29.412Z   [2m182[0m |         <h3 className="text-xl font-semibold mb-3">{title}</h3>
+2026-01-29T05:18:29.412Z   [2m183[0m |         <p className="text-gray-400 mb-4">{description}</p>
+2026-01-29T05:18:29.413Z   [2m184[0m | 
+2026-01-29T05:18:29.413Z   [2m185[0m |         {details && details.length > 0 && (
+2026-01-29T05:18:29.413Z   [2m186[0m |           <button
+2026-01-29T05:18:29.413Z   [2m187[0m |             onClick={() => setExpanded(!expanded)}
+2026-01-29T05:18:29.413Z   [2m188[0m |             className="text-cmg-green text-sm font-medium flex items-center 
+gap-1 hover:gap-2 transition-all"
+2026-01-29T05:18:29.413Z   [2m189[0m |           >
+2026-01-29T05:18:29.413Z   [2m190[0m |             {expanded ? 'Show less' : 'View details'}
+2026-01-29T05:18:29.414Z   [2m191[0m |             <ChevronDown className={`w-4 h-4 transition-transform ${expanded 
+? 'rotate-180' : ''}`} />
+2026-01-29T05:18:29.414Z   [2m192[0m |           </button>
+2026-01-29T05:18:29.414Z   [2m193[0m |         )}
+2026-01-29T05:18:29.414Z   [2m194[0m | 
+2026-01-29T05:18:29.414Z   [2m195[0m |         <AnimatePresence>
+2026-01-29T05:18:29.414Z   [2m196[0m |           {expanded && details && (
+2026-01-29T05:18:29.414Z   [2m197[0m |             <motion.div
+2026-01-29T05:18:29.414Z   [2m198[0m |               initial={{ height: 0, opacity: 0 }}
+2026-01-29T05:18:29.414Z   [2m199[0m |               animate={{ height: 'auto', opacity: 1 }}
+2026-01-29T05:18:29.414Z   [2m200[0m |               exit={{ height: 0, opacity: 0 }}
+2026-01-29T05:18:29.414Z   [2m201[0m |               className="overflow-hidden"
+2026-01-29T05:18:29.415Z   [2m202[0m |             >
+2026-01-29T05:18:29.415Z   [2m203[0m |               <ul className="mt-4 space-y-2 text-sm text-gray-300">
+2026-01-29T05:18:29.415Z   [2m204[0m |                 {details.map((detail, i) => (
+2026-01-29T05:18:29.415Z   [2m205[0m |                   <li key={i} className="flex items-start gap-2">
+2026-01-29T05:18:29.415Z   [2m206[0m |                     <Check className="w-4 h-4 text-cmg-green mt-0.5 
+flex-shrink-0" />
+2026-01-29T05:18:29.415Z   [2m207[0m |                     <span>{detail}</span>
+2026-01-29T05:18:29.415Z   [2m208[0m |                   </li>
+2026-01-29T05:18:29.415Z   [2m209[0m |                 ))}
+2026-01-29T05:18:29.415Z   [2m210[0m |               </ul>
+2026-01-29T05:18:29.415Z   [2m211[0m |             </motion.div>
+2026-01-29T05:18:29.415Z   [2m212[0m |           )}
+2026-01-29T05:18:29.415Z   [2m213[0m |         </AnimatePresence>
+2026-01-29T05:18:29.416Z   [2m214[0m |       </div>
+2026-01-29T05:18:29.416Z   [2m215[0m | 
+2026-01-29T05:18:29.416Z   [2m216[0m |       {image && (
+2026-01-29T05:18:29.416Z   [2m217[0m |         <div className="px-6 pb-6">
+2026-01-29T05:18:29.416Z   [2m218[0m |           <div className="screenshot-container">
+2026-01-29T05:18:29.416Z   [2m219[0m |             <div className="bg-gray-800 pt-8 pb-4 px-4">
+2026-01-29T05:18:29.416Z   [2m220[0m |               <div className="bg-white rounded-lg overflow-hidden">
+2026-01-29T05:18:29.416Z   [2m221[0m |                 {/* eslint-disable-next-line @next/next/no-img-element */}
+2026-01-29T05:18:29.416Z   [2m222[0m |                 <img src={image} alt={title} className="w-full" />
+2026-01-29T05:18:29.416Z   [2m223[0m |               </div>
+2026-01-29T05:18:29.416Z   [2m224[0m |             </div>
+2026-01-29T05:18:29.416Z   [2m225[0m |           </div>
+2026-01-29T05:18:29.416Z   [2m226[0m |         </div>
+2026-01-29T05:18:29.416Z   [2m227[0m |       )}
+2026-01-29T05:18:29.416Z   [2m228[0m |     </motion.div>
+2026-01-29T05:18:29.416Z   [2m229[0m |   )
+2026-01-29T05:18:29.417Z   [2m230[0m | }
+2026-01-29T05:18:29.417Z   [2m231[0m | 
+2026-01-29T05:18:29.417Z   [2m232[0m | // Section Header Component
+2026-01-29T05:18:29.417Z   [2m233[0m | interface SectionHeaderProps {
+2026-01-29T05:18:29.417Z   [2m234[0m |   icon: React.ComponentType<{ className?: string }>
+2026-01-29T05:18:29.417Z   [2m235[0m |   title: string
+2026-01-29T05:18:29.417Z   [2m236[0m |   description: string
+2026-01-29T05:18:29.417Z   [2m237[0m |   id: string
+2026-01-29T05:18:29.417Z   [2m238[0m | }
+2026-01-29T05:18:29.417Z   [2m239[0m | 
+2026-01-29T05:18:29.417Z   [2m240[0m | const SectionHeader = ({ icon: Icon, title, description, id }: 
+SectionHeaderProps) => {
+2026-01-29T05:18:29.417Z   [2m241[0m |   return (
+2026-01-29T05:18:29.417Z   [2m242[0m |     <motion.div
+2026-01-29T05:18:29.417Z   [2m243[0m |       initial={{ opacity: 0, y: 30 }}
+2026-01-29T05:18:29.417Z   [2m244[0m |       whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.417Z   [2m245[0m |       viewport={{ once: true }}
+2026-01-29T05:18:29.418Z   [2m246[0m |       className="text-center mb-16"
+2026-01-29T05:18:29.418Z   [2m247[0m |       id={id}
+2026-01-29T05:18:29.418Z   [2m248[0m |     >
+2026-01-29T05:18:29.418Z   [2m249[0m |       <div className="w-16 h-16 rounded-2xl bg-gradient-to-br 
+from-cmg-green/20 to-neon-blue/20 flex items-center justify-center mx-auto mb-6 neon-border">
+2026-01-29T05:18:29.418Z   [2m250[0m |         <Icon className="w-8 h-8 text-cmg-green" />
+2026-01-29T05:18:29.418Z   [2m251[0m |       </div>
+2026-01-29T05:18:29.418Z   [2m252[0m |       <h2 className="text-4xl font-bold mb-4">{title}</h2>
+2026-01-29T05:18:29.418Z   [2m253[0m |       <p className="text-gray-400 max-w-2xl mx-auto">{description}</p>
+2026-01-29T05:18:29.418Z   [2m254[0m |       <div className="section-divider w-48 mx-auto mt-8" />
+2026-01-29T05:18:29.418Z   [2m255[0m |     </motion.div>
+2026-01-29T05:18:29.418Z   [2m256[0m |   )
+2026-01-29T05:18:29.418Z   [2m257[0m | }
+2026-01-29T05:18:29.418Z   [2m258[0m | 
+2026-01-29T05:18:29.418Z   [2m259[0m | // SmartApp Section
+2026-01-29T05:18:29.418Z   [2m260[0m | const SmartAppSection = () => {
+2026-01-29T05:18:29.419Z   [2m261[0m |   return (
+2026-01-29T05:18:29.419Z   [2m262[0m |     <section className="py-24 relative" id="smartapp">
+2026-01-29T05:18:29.419Z   [2m263[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.419Z   [2m264[0m |         <SectionHeader
+2026-01-29T05:18:29.419Z   [2m265[0m |           icon={Smartphone}
+2026-01-29T05:18:29.419Z   [2m266[0m |           title="SmartApp"
+2026-01-29T05:18:29.419Z   [2m267[0m |           description="TCPA-compliant phone consent messaging with enhanced 
+privacy controls"
+2026-01-29T05:18:29.419Z   [2m268[0m |           id="smartapp-header"
+2026-01-29T05:18:29.419Z   [2m269[0m |         />
+2026-01-29T05:18:29.419Z   [2m270[0m | 
+2026-01-29T05:18:29.419Z   [2m271[0m |         <div className="grid md:grid-cols-2 gap-8">
+2026-01-29T05:18:29.419Z   [2m272[0m |           <FeatureCard
+2026-01-29T05:18:29.419Z   [2m273[0m |             ticketId="78782"
+2026-01-29T05:18:29.419Z   [2m274[0m |             title="Updated Phone Consent for Primary Borrower"
+2026-01-29T05:18:29.419Z   [2m275[0m |             status="enhanced"
+2026-01-29T05:18:29.420Z   [2m276[0m |             description="TCPA-compliant consent messaging with scrollable 
+text box and modal terms."
+2026-01-29T05:18:29.420Z   [2m277[0m |             details={[
+2026-01-29T05:18:29.420Z   [2m278[0m |               'New scrollable consent text with clear opt-in language',
+2026-01-29T05:18:29.420Z   [2m279[0m |               'Clickable "terms" opens full Telephone and Communication 
+Preferences modal',
+2026-01-29T05:18:29.420Z   [2m280[0m |               'Privacy Policy opens in new tab to 
+cmghomeloans.com/corporate/privacy-policy',
+2026-01-29T05:18:29.420Z   [2m281[0m |               'Mentions autodialed, prerecorded, and AI-generated messages',
+2026-01-29T05:18:29.420Z   [2m282[0m |               'Includes ESIGN compliance acknowledgment',
+2026-01-29T05:18:29.420Z   [2m283[0m |               'Opt-out instructions (STOP, account preferences, customer 
+service)',
+2026-01-29T05:18:29.420Z   [2m284[0m |             ]}
+2026-01-29T05:18:29.420Z   [2m285[0m |           />
+2026-01-29T05:18:29.420Z   [2m286[0m | 
+2026-01-29T05:18:29.421Z   [2m287[0m |           <FeatureCard
+2026-01-29T05:18:29.421Z   [2m288[0m |             ticketId="91498"
+2026-01-29T05:18:29.421Z   [2m289[0m |             title="Co-Borrower Phone Type & Consent"
+2026-01-29T05:18:29.421Z   [2m290[0m |             status="new"
+2026-01-29T05:18:29.421Z   [2m291[0m |             description="Extended TCPA consent messaging to co-borrower 
+information page."
+2026-01-29T05:18:29.421Z   [2m292[0m |             details={[
+2026-01-29T05:18:29.421Z   [2m293[0m |               'Phone Type field with Mobile/Home/Work options',
+2026-01-29T05:18:29.421Z   [2m294[0m |               'Same scrollable consent text as primary borrower',
+2026-01-29T05:18:29.421Z   [2m295[0m |               'Terms modal with full legal disclosure',
+2026-01-29T05:18:29.421Z   [2m296[0m |               'Privacy Policy link opens in new tab',
+2026-01-29T05:18:29.422Z   [2m297[0m |               'Checkbox required for consent acknowledgment',
+2026-01-29T05:18:29.422Z   [2m298[0m |             ]}
+2026-01-29T05:18:29.422Z   [2m299[0m |           />
+2026-01-29T05:18:29.422Z   [2m300[0m |         </div>
+2026-01-29T05:18:29.422Z   [2m301[0m | 
+2026-01-29T05:18:29.422Z   [2m302[0m |         {/* Visual Demo */}
+2026-01-29T05:18:29.422Z   [2m303[0m |         <motion.div
+2026-01-29T05:18:29.422Z   [2m304[0m |           initial={{ opacity: 0, y: 40 }}
+2026-01-29T05:18:29.422Z   [2m305[0m |           whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.422Z   [2m306[0m |           viewport={{ once: true }}
+2026-01-29T05:18:29.423Z   [2m307[0m |           className="mt-16"
+2026-01-29T05:18:29.423Z   [2m308[0m |         >
+2026-01-29T05:18:29.423Z   [2m309[0m |           <div className="glass-card rounded-2xl p-8">
+2026-01-29T05:18:29.423Z   [2m310[0m |             <h3 className="text-lg font-semibold mb-6 flex items-center 
+gap-2">
+2026-01-29T05:18:29.423Z   [2m311[0m |               <Lock className="w-5 h-5 text-cmg-green" />
+2026-01-29T05:18:29.423Z   [2m312[0m |               Consent Flow Preview
+2026-01-29T05:18:29.423Z   [2m313[0m |             </h3>
+2026-01-29T05:18:29.423Z   [2m314[0m |             <div className="bg-gray-900/50 rounded-xl p-6 border 
+border-gray-700">
+2026-01-29T05:18:29.423Z   [2m315[0m |               <div className="space-y-4">
+2026-01-29T05:18:29.423Z   [2m316[0m |                 <div>
+2026-01-29T05:18:29.424Z   [2m317[0m |                   <label className="text-sm text-gray-400 mb-2 block">Phone 
+#</label>
+2026-01-29T05:18:29.424Z   [2m318[0m |                   <div className="bg-gray-800 rounded-lg px-4 py-3 
+text-gray-300">(276) 219-3197</div>
+2026-01-29T05:18:29.424Z   [2m319[0m |                 </div>
+2026-01-29T05:18:29.424Z   [2m320[0m |                 <div>
+2026-01-29T05:18:29.424Z   [2m321[0m |                   <label className="text-sm text-gray-400 mb-2 block">Phone 
+Type:</label>
+2026-01-29T05:18:29.424Z   [2m322[0m |                   <div className="flex gap-4">
+2026-01-29T05:18:29.424Z   [2m323[0m |                     {['Mobile', 'Home', 'Work'].map((type, i) => (
+2026-01-29T05:18:29.424Z   [2m324[0m |                       <label key={type} className="flex items-center gap-2 
+cursor-pointer">
+2026-01-29T05:18:29.424Z   [2m325[0m |                         <div className={`w-4 h-4 rounded-full border-2 ${i 
+=== 0 ? 'bg-cmg-green border-cmg-green' : 'border-gray-500'}`} />
+2026-01-29T05:18:29.424Z   [2m326[0m |                         <span className="text-sm">{type}</span>
+2026-01-29T05:18:29.424Z   [2m327[0m |                       </label>
+2026-01-29T05:18:29.425Z   [2m328[0m |                     ))}
+2026-01-29T05:18:29.425Z   [2m329[0m |                   </div>
+2026-01-29T05:18:29.425Z   [2m330[0m |                 </div>
+2026-01-29T05:18:29.425Z   [2m331[0m |                 <div className="flex items-start gap-3 bg-gray-800/50 
+rounded-lg p-4 border border-cmg-green/20">
+2026-01-29T05:18:29.425Z   [2m332[0m |                   <div className="w-5 h-5 rounded bg-cmg-green flex 
+items-center justify-center flex-shrink-0 mt-0.5">
+2026-01-29T05:18:29.425Z   [2m333[0m |                     <Check className="w-3 h-3 text-white" />
+2026-01-29T05:18:29.425Z   [2m334[0m |                   </div>
+2026-01-29T05:18:29.425Z   [2m335[0m |                   <p className="text-sm text-gray-300 leading-relaxed">
+2026-01-29T05:18:29.426Z   [2m336[0m |                     By entering my mobile number or other phone number and 
+checking the box, I agree to receiving text and voice communications (including using autodialed or prerecorded 
+messages) related to reminders, offers, and other information from CMG Mortgage, Inc. dba CMG Home Loans... View our 
+<span className="text-cmg-green underline">terms</span> and <span className="text-cmg-green underline">Privacy 
+Policy</span>.
+2026-01-29T05:18:29.426Z   [2m337[0m |                   </p>
+2026-01-29T05:18:29.426Z   [2m338[0m |                 </div>
+2026-01-29T05:18:29.426Z   [2m339[0m |               </div>
+2026-01-29T05:18:29.426Z   [2m340[0m |             </div>
+2026-01-29T05:18:29.426Z   [2m341[0m |           </div>
+2026-01-29T05:18:29.426Z   [2m342[0m |         </motion.div>
+2026-01-29T05:18:29.426Z   [2m343[0m |       </div>
+2026-01-29T05:18:29.426Z   [2m344[0m |     </section>
+2026-01-29T05:18:29.426Z   [2m345[0m |   )
+2026-01-29T05:18:29.426Z   [2m346[0m | }
+2026-01-29T05:18:29.426Z   [2m347[0m | 
+2026-01-29T05:18:29.426Z   [2m348[0m | // Portal Tasks Section
+2026-01-29T05:18:29.426Z   [2m349[0m | const PortalTasksSection = () => {
+2026-01-29T05:18:29.426Z   [2m350[0m |   return (
+2026-01-29T05:18:29.427Z   [2m351[0m |     <section className="py-24 relative" id="portal">
+2026-01-29T05:18:29.427Z   [2m352[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.427Z   [2m353[0m |         <SectionHeader
+2026-01-29T05:18:29.427Z   [2m354[0m |           icon={FileText}
+2026-01-29T05:18:29.427Z   [2m355[0m |           title="Home Portal ΓÇô Tasks"
+2026-01-29T05:18:29.427Z   [2m356[0m |           description="Docutech eSign integration and enhanced document 
+upload workflows"
+2026-01-29T05:18:29.427Z   [2m357[0m |           id="portal-header"
+2026-01-29T05:18:29.427Z   [2m358[0m |         />
+2026-01-29T05:18:29.427Z   [2m359[0m | 
+2026-01-29T05:18:29.427Z   [2m360[0m |         <div className="grid md:grid-cols-2 gap-8">
+2026-01-29T05:18:29.427Z   [2m361[0m |           <FeatureCard
+2026-01-29T05:18:29.427Z   [2m362[0m |             ticketId="69460"
+2026-01-29T05:18:29.427Z   [2m363[0m |             title="Docutech eSign Tasks Action Page"
+2026-01-29T05:18:29.427Z   [2m364[0m |             status="new"
+2026-01-29T05:18:29.427Z   [2m365[0m |             description="View and electronically sign loan disclosures 
+directly from the Home Portal."
+2026-01-29T05:18:29.427Z   [2m366[0m |             details={[
+2026-01-29T05:18:29.427Z   [2m367[0m |               'New eSign task type in Tasks view',
+2026-01-29T05:18:29.427Z   [2m368[0m |               'View and Complete tabs for task status',
+2026-01-29T05:18:29.427Z   [2m369[0m |               'Direct integration with Docutech signing room',
+2026-01-29T05:18:29.427Z   [2m370[0m |               'Tasks show borrower name assignment',
+2026-01-29T05:18:29.428Z   [2m371[0m |               'Completed date tracking',
+2026-01-29T05:18:29.428Z   [2m372[0m |             ]}
+2026-01-29T05:18:29.428Z   [2m373[0m |           />
+2026-01-29T05:18:29.428Z   [2m374[0m | 
+2026-01-29T05:18:29.428Z   [2m375[0m |           <FeatureCard
+2026-01-29T05:18:29.428Z   [2m376[0m |             ticketId="79993"
+2026-01-29T05:18:29.428Z   [2m377[0m |             title="Solex eSigning Room Integration"
+2026-01-29T05:18:29.428Z   [2m378[0m |             status="new"
+2026-01-29T05:18:29.428Z   [2m379[0m |             description="Complete disclosure package signing directly through 
+the Home Portal&apos;s eSign Action Page."
+2026-01-29T05:18:29.428Z   [2m380[0m |             details={[
+2026-01-29T05:18:29.428Z   [2m381[0m |               'Step-by-step signing instructions',
+2026-01-29T05:18:29.428Z   [2m382[0m |               'Opens CMG Solex signing room in new window',
+2026-01-29T05:18:29.428Z   [2m383[0m |               'Status updates from Pending to Complete automatically',
+2026-01-29T05:18:29.428Z   [2m384[0m |               'Uses EPS Disclosure data API response',
+2026-01-29T05:18:29.428Z   [2m385[0m |               '"Done" button to return to tasks',
+2026-01-29T05:18:29.428Z   [2m386[0m |             ]}
+2026-01-29T05:18:29.428Z   [2m387[0m |           />
+2026-01-29T05:18:29.428Z   [2m388[0m | 
+2026-01-29T05:18:29.428Z   [2m389[0m |           <FeatureCard
+2026-01-29T05:18:29.428Z   [2m390[0m |             ticketId="87188"
+2026-01-29T05:18:29.428Z   [2m391[0m |             title="Enhanced Document Upload Workflow"
+2026-01-29T05:18:29.429Z   [2m392[0m |             status="enhanced"
+2026-01-29T05:18:29.429Z   [2m393[0m |             description="More accurate borrower targeting via enhanced Clear 
+Docs API and EPS API."
+2026-01-29T05:18:29.429Z   [2m394[0m |             details={[
+2026-01-29T05:18:29.429Z   [2m395[0m |               'Borrower identification via email matching logic',
+2026-01-29T05:18:29.429Z   [2m396[0m |               'Display correct Document Requests based on Application ID(s)',
+2026-01-29T05:18:29.429Z   [2m397[0m |               'Support for multi-application scenarios',
+2026-01-29T05:18:29.429Z   [2m398[0m |               'Support for multi-match scenarios',
+2026-01-29T05:18:29.429Z   [2m399[0m |               '"Assigned To" populated from API response',
+2026-01-29T05:18:29.429Z   [2m400[0m |             ]}
+2026-01-29T05:18:29.429Z   [2m401[0m |           />
+2026-01-29T05:18:29.429Z   [2m402[0m | 
+2026-01-29T05:18:29.429Z   [2m403[0m |           <FeatureCard
+2026-01-29T05:18:29.429Z   [2m404[0m |             ticketId="89824"
+2026-01-29T05:18:29.429Z   [2m405[0m |             title="Doc Type Display for Completed Tasks"
+2026-01-29T05:18:29.429Z   [2m406[0m |             status="enhanced"
+2026-01-29T05:18:29.429Z   [2m407[0m |             description="Completed upload tasks now show associated document 
+types."
+2026-01-29T05:18:29.429Z   [2m408[0m |             details={[
+2026-01-29T05:18:29.429Z   [2m409[0m |               'Removed "Added <date>" from Completed View',
+2026-01-29T05:18:29.430Z   [2m410[0m |               'New "File(s) Received" title below Task Completed banner',
+2026-01-29T05:18:29.430Z   [2m411[0m |               'Document Type List based on associated request',
+2026-01-29T05:18:29.430Z   [2m412[0m |               'Clear Docs API returns DocType per document',
+2026-01-29T05:18:29.430Z   [2m413[0m |             ]}
+2026-01-29T05:18:29.430Z   [2m414[0m |           />
+2026-01-29T05:18:29.430Z   [2m415[0m |         </div>
+2026-01-29T05:18:29.430Z   [2m416[0m | 
+2026-01-29T05:18:29.430Z   [2m417[0m |         {/* Task Flow Visual */}
+2026-01-29T05:18:29.430Z   [2m418[0m |         <motion.div
+2026-01-29T05:18:29.430Z   [2m419[0m |           initial={{ opacity: 0, y: 40 }}
+2026-01-29T05:18:29.430Z   [2m420[0m |           whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.430Z   [2m421[0m |           viewport={{ once: true }}
+2026-01-29T05:18:29.430Z   [2m422[0m |           className="mt-16"
+2026-01-29T05:18:29.430Z   [2m423[0m |         >
+2026-01-29T05:18:29.430Z   [2m424[0m |           <div className="glass-card rounded-2xl p-8">
+2026-01-29T05:18:29.430Z   [2m425[0m |             <h3 className="text-lg font-semibold mb-6 flex items-center 
+gap-2">
+2026-01-29T05:18:29.431Z   [2m426[0m |               <FileCheck className="w-5 h-5 text-cmg-green" />
+2026-01-29T05:18:29.431Z   [2m427[0m |               Task Completion Flow
+2026-01-29T05:18:29.433Z   [2m428[0m |             </h3>
+2026-01-29T05:18:29.433Z   [2m429[0m |             <div className="grid md:grid-cols-3 gap-6">
+2026-01-29T05:18:29.433Z   [2m430[0m |               {[
+2026-01-29T05:18:29.433Z   [2m431[0m |                 { status: 'Pending', color: 'yellow', icon: FileText, desc: 
+'Task awaiting action' },
+2026-01-29T05:18:29.433Z   [2m432[0m |                 { status: 'In Progress', color: 'blue', icon: Upload, desc: 
+'Signing or uploading' },
+2026-01-29T05:18:29.433Z   [2m433[0m |                 { status: 'Complete', color: 'green', icon: Check, desc: 
+'Task finished' },
+2026-01-29T05:18:29.434Z   [2m434[0m |               ].map((step, i) => (
+2026-01-29T05:18:29.434Z   [2m435[0m |                 <div key={step.status} className="relative">
+2026-01-29T05:18:29.434Z   [2m436[0m |                   <div className={`bg-gray-900/50 rounded-xl p-6 border ${
+2026-01-29T05:18:29.434Z   [2m437[0m |                     step.color === 'green' ? 'border-cmg-green/30' :
+2026-01-29T05:18:29.434Z   [2m438[0m |                     step.color === 'blue' ? 'border-neon-blue/30' :
+2026-01-29T05:18:29.434Z   [2m439[0m |                     'border-yellow-500/30'
+2026-01-29T05:18:29.434Z   [2m440[0m |                   }`}>
+2026-01-29T05:18:29.434Z   [2m441[0m |                     <div className={`w-12 h-12 rounded-lg flex items-center 
+justify-center mb-4 ${
+2026-01-29T05:18:29.434Z   [2m442[0m |                       step.color === 'green' ? 'bg-cmg-green/20' :
+2026-01-29T05:18:29.434Z   [2m443[0m |                       step.color === 'blue' ? 'bg-neon-blue/20' :
+2026-01-29T05:18:29.434Z   [2m444[0m |                       'bg-yellow-500/20'
+2026-01-29T05:18:29.434Z   [2m445[0m |                     }`}>
+2026-01-29T05:18:29.434Z   [2m446[0m |                       <step.icon className={`w-6 h-6 ${
+2026-01-29T05:18:29.434Z   [2m447[0m |                         step.color === 'green' ? 'text-cmg-green' :
+2026-01-29T05:18:29.434Z   [2m448[0m |                         step.color === 'blue' ? 'text-neon-blue' :
+2026-01-29T05:18:29.434Z   [2m449[0m |                         'text-yellow-500'
+2026-01-29T05:18:29.434Z   [2m450[0m |                       }`} />
+2026-01-29T05:18:29.434Z   [2m451[0m |                     </div>
+2026-01-29T05:18:29.434Z   [2m452[0m |                     <h4 className="font-semibold mb-1">{step.status}</h4>
+2026-01-29T05:18:29.434Z   [2m453[0m |                     <p className="text-sm text-gray-400">{step.desc}</p>
+2026-01-29T05:18:29.434Z   [2m454[0m |                   </div>
+2026-01-29T05:18:29.434Z   [2m455[0m |                   {i < 2 && (
+2026-01-29T05:18:29.434Z   [2m456[0m |                     <div className="hidden md:block absolute top-1/2 -right-3 
+w-6 h-0.5 bg-gradient-to-r from-gray-600 to-transparent" />
+2026-01-29T05:18:29.434Z   [2m457[0m |                   )}
+2026-01-29T05:18:29.434Z   [2m458[0m |                 </div>
+2026-01-29T05:18:29.434Z   [2m459[0m |               ))}
+2026-01-29T05:18:29.434Z   [2m460[0m |             </div>
+2026-01-29T05:18:29.435Z   [2m461[0m |           </div>
+2026-01-29T05:18:29.435Z   [2m462[0m |         </motion.div>
+2026-01-29T05:18:29.435Z   [2m463[0m |       </div>
+2026-01-29T05:18:29.435Z   [2m464[0m |     </section>
+2026-01-29T05:18:29.435Z   [2m465[0m |   )
+2026-01-29T05:18:29.435Z   [2m466[0m | }
+2026-01-29T05:18:29.435Z   [2m467[0m | 
+2026-01-29T05:18:29.435Z   [2m468[0m | // Home Portal Section
+2026-01-29T05:18:29.435Z   [2m469[0m | const HomePortalSection = () => {
+2026-01-29T05:18:29.435Z   [2m470[0m |   const [showLoan, setShowLoan] = useState(false)
+2026-01-29T05:18:29.435Z   [2m471[0m | 
+2026-01-29T05:18:29.435Z   [2m472[0m |   return (
+2026-01-29T05:18:29.435Z   [2m473[0m |     <section className="py-24 relative">
+2026-01-29T05:18:29.435Z   [2m474[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.435Z   [2m475[0m |         <SectionHeader
+2026-01-29T05:18:29.435Z   [2m476[0m |           icon={Home}
+2026-01-29T05:18:29.435Z   [2m477[0m |           title="Home Portal"
+2026-01-29T05:18:29.435Z   [2m478[0m |           description="Enhanced security and improved calculator accuracy"
+2026-01-29T05:18:29.435Z   [2m479[0m |           id="home-portal-header"
+2026-01-29T05:18:29.435Z   [2m480[0m |         />
+2026-01-29T05:18:29.435Z   [2m481[0m | 
+2026-01-29T05:18:29.435Z   [2m482[0m |         <div className="grid md:grid-cols-2 gap-8">
+2026-01-29T05:18:29.435Z   [2m483[0m |           <FeatureCard
+2026-01-29T05:18:29.435Z   [2m484[0m |             ticketId="65133"
+2026-01-29T05:18:29.435Z   [2m485[0m |             title="Loan Number Masking"
+2026-01-29T05:18:29.435Z   [2m486[0m |             status="new"
+2026-01-29T05:18:29.435Z   [2m487[0m |             description="Loan numbers masked to last 4 digits by default with 
+toggle visibility."
+2026-01-29T05:18:29.435Z   [2m488[0m |             details={[
+2026-01-29T05:18:29.435Z   [2m489[0m |               'Applies to Loan Application cards on primary dashboard',
+2026-01-29T05:18:29.436Z   [2m490[0m |               'Applies to Mortgage Account cards on primary dashboard',
+2026-01-29T05:18:29.436Z   [2m491[0m |               'Eye icon toggle to reveal/hide full number',
+2026-01-29T05:18:29.436Z   [2m492[0m |               'Works on Documents page',
+2026-01-29T05:18:29.436Z   [2m493[0m |               'Icon changes state based on visibility',
+2026-01-29T05:18:29.436Z   [2m494[0m |             ]}
+2026-01-29T05:18:29.436Z   [2m495[0m |           />
+2026-01-29T05:18:29.436Z   [2m496[0m | 
+2026-01-29T05:18:29.436Z   [2m497[0m |           <FeatureCard
+2026-01-29T05:18:29.436Z   [2m498[0m |             ticketId="86711"
+2026-01-29T05:18:29.436Z   [2m499[0m |             title="Verify Identity Navigation"
+2026-01-29T05:18:29.436Z   [2m500[0m |             status="enhanced"
+2026-01-29T05:18:29.436Z   [2m501[0m |             description="Users can navigate away from Verify Identity page 
+and return later."
+2026-01-29T05:18:29.436Z   [2m502[0m |             details={[
+2026-01-29T05:18:29.436Z   [2m503[0m |               'Navigate to dashboard after redirect for servicing loans',
+2026-01-29T05:18:29.436Z   [2m504[0m |               'Return to Verify Identity later to complete verification',
+2026-01-29T05:18:29.436Z   [2m505[0m |               'Loan Application shows as post-funded until verified',
+2026-01-29T05:18:29.436Z   [2m506[0m |               'Improved user flexibility',
+2026-01-29T05:18:29.436Z   [2m507[0m |             ]}
+2026-01-29T05:18:29.436Z   [2m508[0m |           />
+2026-01-29T05:18:29.436Z   [2m509[0m | 
+2026-01-29T05:18:29.436Z   [2m510[0m |           <FeatureCard
+2026-01-29T05:18:29.436Z   [2m511[0m |             ticketId="92249"
+2026-01-29T05:18:29.436Z   [2m512[0m |             title="Mortgage Calculator Fix"
+2026-01-29T05:18:29.436Z   [2m513[0m |             status="fix"
+2026-01-29T05:18:29.436Z   [2m514[0m |             description="Fixed rounding for 1/8th point interest rates (.125, 
+.375, .625, .875)."
+2026-01-29T05:18:29.436Z   [2m515[0m |             details={[
+2026-01-29T05:18:29.436Z   [2m516[0m |               'Corrected computational logic for precise calculations',
+2026-01-29T05:18:29.436Z   [2m517[0m |               'Updated to new calculator package version',
+2026-01-29T05:18:29.437Z   [2m518[0m |               'Consistent with expected financial standards',
+2026-01-29T05:18:29.437Z   [2m519[0m |             ]}
+2026-01-29T05:18:29.437Z   [2m520[0m |           />
+2026-01-29T05:18:29.437Z   [2m521[0m |         </div>
+2026-01-29T05:18:29.437Z   [2m522[0m | 
+2026-01-29T05:18:29.437Z   [2m523[0m |         {/* Interactive Demo */}
+2026-01-29T05:18:29.437Z   [2m524[0m |         <motion.div
+2026-01-29T05:18:29.437Z   [2m525[0m |           initial={{ opacity: 0, y: 40 }}
+2026-01-29T05:18:29.437Z   [2m526[0m |           whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.437Z   [2m527[0m |           viewport={{ once: true }}
+2026-01-29T05:18:29.438Z   [2m528[0m |           className="mt-16"
+2026-01-29T05:18:29.438Z   [2m529[0m |         >
+2026-01-29T05:18:29.438Z   [2m530[0m |           <div className="glass-card rounded-2xl p-8">
+2026-01-29T05:18:29.438Z   [2m531[0m |             <h3 className="text-lg font-semibold mb-6 flex items-center 
+gap-2">
+2026-01-29T05:18:29.438Z   [2m532[0m |               <Eye className="w-5 h-5 text-cmg-green" />
+2026-01-29T05:18:29.438Z   [2m533[0m |               Loan Number Masking Demo
+2026-01-29T05:18:29.438Z   [2m534[0m |             </h3>
+2026-01-29T05:18:29.438Z   [2m535[0m |             <div className="bg-gray-900/50 rounded-xl p-6 border 
+border-gray-700">
+2026-01-29T05:18:29.438Z   [2m536[0m |               <div className="flex items-center justify-between">
+2026-01-29T05:18:29.438Z   [2m537[0m |                 <div>
+2026-01-29T05:18:29.438Z   [2m538[0m |                   <p className="text-sm text-gray-400 mb-1">Mortgage 
+Account</p>
+2026-01-29T05:18:29.438Z   [2m539[0m |                   <div className="flex items-center gap-3">
+2026-01-29T05:18:29.438Z   [2m540[0m |                     <Home className="w-8 h-8 text-cmg-green" />
+2026-01-29T05:18:29.438Z   [2m541[0m |                     <div>
+2026-01-29T05:18:29.438Z   [2m542[0m |                       <p className="font-semibold">1685 Center Star Rd, 
+Columbia, TN</p>
+2026-01-29T05:18:29.438Z   [2m543[0m |                       <p className="text-sm text-gray-400 flex items-center 
+gap-2">
+2026-01-29T05:18:29.438Z   [2m544[0m |                         Loan# {showLoan ? 'RWE54320000001' : 
+'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó0001'}
+2026-01-29T05:18:29.438Z   [2m545[0m |                         <button
+2026-01-29T05:18:29.439Z   [2m546[0m |                           onClick={() => setShowLoan(!showLoan)}
+2026-01-29T05:18:29.439Z   [2m547[0m |                           className="text-cmg-green hover:text-neon-blue 
+transition-colors"
+2026-01-29T05:18:29.439Z   [2m548[0m |                         >
+2026-01-29T05:18:29.439Z   [2m549[0m |                           {showLoan ? <EyeOff className="w-4 h-4" /> : <Eye 
+className="w-4 h-4" />}
+2026-01-29T05:18:29.439Z   [2m550[0m |                         </button>
+2026-01-29T05:18:29.439Z   [2m551[0m |                       </p>
+2026-01-29T05:18:29.439Z   [2m552[0m |                     </div>
+2026-01-29T05:18:29.439Z   [2m553[0m |                   </div>
+2026-01-29T05:18:29.439Z   [2m554[0m |                 </div>
+2026-01-29T05:18:29.439Z   [2m555[0m |                 <div className="text-right">
+2026-01-29T05:18:29.439Z   [2m556[0m |                   <p className="text-2xl font-bold 
+text-cmg-green">$635,000.00</p>
+2026-01-29T05:18:29.439Z   [2m557[0m |                   <p className="text-sm text-gray-400">Loan Balance</p>
+2026-01-29T05:18:29.439Z   [2m558[0m |                 </div>
+2026-01-29T05:18:29.439Z   [2m559[0m |               </div>
+2026-01-29T05:18:29.439Z   [2m560[0m |             </div>
+2026-01-29T05:18:29.439Z   [2m561[0m |           </div>
+2026-01-29T05:18:29.439Z   [2m562[0m |         </motion.div>
+2026-01-29T05:18:29.439Z   [2m563[0m |       </div>
+2026-01-29T05:18:29.440Z   [2m564[0m |     </section>
+2026-01-29T05:18:29.440Z   [2m565[0m |   )
+2026-01-29T05:18:29.440Z   [2m566[0m | }
+2026-01-29T05:18:29.440Z   [2m567[0m | 
+2026-01-29T05:18:29.440Z   [2m568[0m | // Servicing Section
+2026-01-29T05:18:29.440Z   [2m569[0m | const ServicingSection = () => {
+2026-01-29T05:18:29.440Z   [2m570[0m |   return (
+2026-01-29T05:18:29.440Z   [2m571[0m |     <section className="py-24 relative" id="servicing">
+2026-01-29T05:18:29.440Z   [2m572[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.440Z   [2m573[0m |         <SectionHeader
+2026-01-29T05:18:29.440Z   [2m574[0m |           icon={Shield}
+2026-01-29T05:18:29.440Z   [2m575[0m |           title="Home Portal Servicing"
+2026-01-29T05:18:29.440Z   [2m576[0m |           description="Tax statements, new document types, and enhanced 
+access controls"
+2026-01-29T05:18:29.440Z   [2m577[0m |           id="servicing-header"
+2026-01-29T05:18:29.440Z   [2m578[0m |         />
+2026-01-29T05:18:29.440Z   [2m579[0m | 
+2026-01-29T05:18:29.440Z   [2m580[0m |         <div className="grid md:grid-cols-2 gap-8">
+2026-01-29T05:18:29.440Z   [2m581[0m |           <FeatureCard
+2026-01-29T05:18:29.440Z   [2m582[0m |             ticketId="92871"
+2026-01-29T05:18:29.440Z   [2m583[0m |             title="Form 1098 Pre-Delivery Banner"
+2026-01-29T05:18:29.440Z   [2m584[0m |             status="new"
+2026-01-29T05:18:29.440Z   [2m585[0m |             description="Blue announcement banner for tax statement 
+preparation."
+2026-01-29T05:18:29.440Z   [2m586[0m |             details={[
+2026-01-29T05:18:29.440Z   [2m587[0m |               'Location: Top of screen on mortgage accounts',
+2026-01-29T05:18:29.440Z   [2m588[0m |               'Message indicates form is being prepared',
+2026-01-29T05:18:29.441Z   [2m589[0m |               'States availability in Documents Center by Jan 31',
+2026-01-29T05:18:29.441Z   [2m590[0m |               'Notes mailing will also be sent',
+2026-01-29T05:18:29.441Z   [2m591[0m |             ]}
+2026-01-29T05:18:29.441Z   [2m592[0m |           />
+2026-01-29T05:18:29.441Z   [2m593[0m | 
+2026-01-29T05:18:29.441Z   [2m594[0m |           <FeatureCard
+2026-01-29T05:18:29.441Z   [2m595[0m |             ticketId="92873"
+2026-01-29T05:18:29.441Z   [2m596[0m |             title="Form 1098 Post-Delivery Banner"
+2026-01-29T05:18:29.441Z   [2m597[0m |             status="new"
+2026-01-29T05:18:29.441Z   [2m598[0m |             description="Green announcement banner when tax statement is 
+ready."
+2026-01-29T05:18:29.441Z   [2m599[0m |             details={[
+2026-01-29T05:18:29.441Z   [2m600[0m |               'Replaces blue banner after delivery',
+2026-01-29T05:18:29.441Z   [2m601[0m |               'Directs users to Documents Center',
+2026-01-29T05:18:29.441Z   [2m602[0m |               'Notes printed copy has been mailed',
+2026-01-29T05:18:29.441Z   [2m603[0m |               'Important notice about multiple 1098s',
+2026-01-29T05:18:29.441Z   [2m604[0m |               'Instructions to use most recent form',
+2026-01-29T05:18:29.441Z   [2m605[0m |             ]}
+2026-01-29T05:18:29.441Z   [2m606[0m |           />
+2026-01-29T05:18:29.441Z   [2m607[0m | 
+2026-01-29T05:18:29.441Z   [2m608[0m |           <FeatureCard
+2026-01-29T05:18:29.441Z   [2m609[0m |             ticketId="92003"
+2026-01-29T05:18:29.441Z   [2m610[0m |             title="Loan Amount ΓåÆ Loan Balance"
+2026-01-29T05:18:29.441Z   [2m611[0m |             status="enhanced"
+2026-01-29T05:18:29.441Z   [2m612[0m |             description="Label change on Mortgage Account cards for clarity."
+2026-01-29T05:18:29.441Z   [2m613[0m |             details={[
+2026-01-29T05:18:29.441Z   [2m614[0m |               'Changed from "Loan Amount" to "Loan Balance"',
+2026-01-29T05:18:29.442Z   [2m615[0m |               'Applies to primary dashboard cards',
+2026-01-29T05:18:29.442Z   [2m616[0m |               'Works for Cenlar and LoanServ loans',
+2026-01-29T05:18:29.442Z   [2m617[0m |             ]}
+2026-01-29T05:18:29.442Z   [2m618[0m |           />
+2026-01-29T05:18:29.442Z   [2m619[0m | 
+2026-01-29T05:18:29.442Z   [2m620[0m |           <FeatureCard
+2026-01-29T05:18:29.442Z   [2m621[0m |             ticketId="90377"
+2026-01-29T05:18:29.442Z   [2m622[0m |             title="10 New Document Types"
+2026-01-29T05:18:29.442Z   [2m623[0m |             status="new"
+2026-01-29T05:18:29.442Z   [2m624[0m |             description="Expanded document support including appraisals, 
+disclosures, and tax forms."
+2026-01-29T05:18:29.442Z   [2m625[0m |             details={[
+2026-01-29T05:18:29.442Z   [2m626[0m |               'Funding Package (Closing category)',
+2026-01-29T05:18:29.442Z   [2m627[0m |               'Appraisal (Valuation category)',
+2026-01-29T05:18:29.442Z   [2m628[0m |               'Closing Disclosure ΓÇô Final (Closing category)',
+2026-01-29T05:18:29.442Z   [2m629[0m |               'MI Removal Denial Notice (Insurance)',
+2026-01-29T05:18:29.442Z   [2m630[0m |               'MI Removal/Cancellation Approval (Insurance)',
+2026-01-29T05:18:29.442Z   [2m631[0m |               'MI Removal Confirmation Notice (Insurance)',
+2026-01-29T05:18:29.442Z   [2m632[0m |               'IRS 1099-MISC (Borrower category)',
+2026-01-29T05:18:29.442Z   [2m633[0m |               'IRS Form 1099-A (Compliance)',
+2026-01-29T05:18:29.442Z   [2m634[0m |               'IRS Form 1099-C (Compliance)',
+2026-01-29T05:18:29.442Z   [2m635[0m |               'Filter by document type available',
+2026-01-29T05:18:29.442Z   [2m636[0m |             ]}
+2026-01-29T05:18:29.442Z   [2m637[0m |           />
+2026-01-29T05:18:29.442Z   [2m638[0m | 
+2026-01-29T05:18:29.443Z   [2m639[0m |           <FeatureCard
+2026-01-29T05:18:29.443Z   [2m640[0m |             ticketId="92256"
+2026-01-29T05:18:29.443Z   [2m641[0m |             title="Co-Borrower SSN Search"
+2026-01-29T05:18:29.443Z   [2m642[0m |             status="enhanced"
+2026-01-29T05:18:29.443Z   [2m643[0m |             description="Extended SSN search to include co-borrowers for 
+dashboard access."
+2026-01-29T05:18:29.443Z   [2m644[0m |             details={[
+2026-01-29T05:18:29.443Z   [2m645[0m |               'Users not as primary borrower can now access dashboard',
+2026-01-29T05:18:29.443Z   [2m646[0m |               'Works when borrower roles changed during application',
+2026-01-29T05:18:29.443Z   [2m647[0m |               'Requires successful identity verification',
+2026-01-29T05:18:29.443Z   [2m648[0m |               'Full dashboard access without restriction',
+2026-01-29T05:18:29.443Z   [2m649[0m |             ]}
+2026-01-29T05:18:29.443Z   [2m650[0m |           />
+2026-01-29T05:18:29.443Z   [2m651[0m | 
+2026-01-29T05:18:29.443Z   [2m652[0m |           <FeatureCard
+2026-01-29T05:18:29.443Z   [2m653[0m |             ticketId="90375"
+2026-01-29T05:18:29.443Z   [2m654[0m |             title="Updated No Documents Message"
+2026-01-29T05:18:29.443Z   [2m655[0m |             status="enhanced"
+2026-01-29T05:18:29.443Z   [2m656[0m |             description="Improved messaging when loan documents aren't yet 
+available."
+2026-01-29T05:18:29.443Z   [2m657[0m |             details={[
+2026-01-29T05:18:29.443Z   [2m658[0m |               'New message explains documents are being loaded',
+2026-01-29T05:18:29.443Z   [2m659[0m |               'Sets expectation: ~10 business days from close',
+2026-01-29T05:18:29.443Z   [2m660[0m |               'Error state shows red alert with refresh suggestion',
+2026-01-29T05:18:29.443Z   [2m661[0m |             ]}
+2026-01-29T05:18:29.444Z   [2m662[0m |           />
+2026-01-29T05:18:29.444Z   [2m663[0m | 
+2026-01-29T05:18:29.444Z   [2m664[0m |           <FeatureCard
+2026-01-29T05:18:29.444Z   [2m665[0m |             ticketId="92082"
+2026-01-29T05:18:29.444Z   [2m666[0m |             title="Aspen Grove Widgets Upgrade"
+2026-01-29T05:18:29.444Z   [2m667[0m |             status="enhanced"
+2026-01-29T05:18:29.444Z   [2m668[0m |             description="Updated widget library to version 1.50.0."
+2026-01-29T05:18:29.444Z   [2m669[0m |             details={[
+2026-01-29T05:18:29.444Z   [2m670[0m |               'Performance improvements',
+2026-01-29T05:18:29.444Z   [2m671[0m |               'Bug fixes and enhancements',
+2026-01-29T05:18:29.444Z   [2m672[0m |               'Latest features enabled',
+2026-01-29T05:18:29.444Z   [2m673[0m |             ]}
+2026-01-29T05:18:29.444Z   [2m674[0m |           />
+2026-01-29T05:18:29.444Z   [2m675[0m |         </div>
+2026-01-29T05:18:29.444Z   [2m676[0m | 
+2026-01-29T05:18:29.444Z   [2m677[0m |         {/* Banner Preview */}
+2026-01-29T05:18:29.444Z   [2m678[0m |         <motion.div
+2026-01-29T05:18:29.444Z   [2m679[0m |           initial={{ opacity: 0, y: 40 }}
+2026-01-29T05:18:29.444Z   [2m680[0m |           whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.444Z   [2m681[0m |           viewport={{ once: true }}
+2026-01-29T05:18:29.444Z   [2m682[0m |           className="mt-16 space-y-6"
+2026-01-29T05:18:29.444Z   [2m683[0m |         >
+2026-01-29T05:18:29.444Z   [2m684[0m |           <div className="glass-card rounded-2xl p-8">
+2026-01-29T05:18:29.444Z   [2m685[0m |             <h3 className="text-lg font-semibold mb-6 flex items-center 
+gap-2">
+2026-01-29T05:18:29.444Z   [2m686[0m |               <Bell className="w-5 h-5 text-cmg-green" />
+2026-01-29T05:18:29.445Z   [2m687[0m |               Tax Statement Banners
+2026-01-29T05:18:29.445Z   [2m688[0m |             </h3>
+2026-01-29T05:18:29.445Z   [2m689[0m |             <div className="space-y-4">
+2026-01-29T05:18:29.445Z   [2m690[0m |               <div className="bg-blue-500/10 border border-blue-500/30 
+rounded-lg p-4 flex items-start gap-3">
+2026-01-29T05:18:29.445Z   [2m691[0m |                 <div className="w-6 h-6 rounded-full bg-blue-500/20 flex 
+items-center justify-center flex-shrink-0 mt-0.5">
+2026-01-29T05:18:29.445Z   [2m692[0m |                   <span className="text-blue-400 text-sm">i</span>
+2026-01-29T05:18:29.445Z   [2m693[0m |                 </div>
+2026-01-29T05:18:29.445Z   [2m694[0m |                 <p className="text-sm text-blue-100">
+2026-01-29T05:18:29.445Z   [2m695[0m |                   <strong>Your complete Form 1098 tax statement is being 
+prepared.</strong> It will be mailed to you and available in the Documents Center by January 31.
+2026-01-29T05:18:29.445Z   [2m696[0m |                 </p>
+2026-01-29T05:18:29.445Z   [2m697[0m |               </div>
+2026-01-29T05:18:29.445Z   [2m698[0m |               <div className="bg-cmg-green/10 border border-cmg-green/30 
+rounded-lg p-4 flex items-start gap-3">
+2026-01-29T05:18:29.445Z   [2m699[0m |                 <div className="w-6 h-6 rounded-full bg-cmg-green/20 flex 
+items-center justify-center flex-shrink-0 mt-0.5">
+2026-01-29T05:18:29.445Z   [2m700[0m |                   <Check className="w-4 h-4 text-cmg-green" />
+2026-01-29T05:18:29.445Z   [2m701[0m |                 </div>
+2026-01-29T05:18:29.445Z   [2m702[0m |                 <div className="text-sm text-green-100">
+2026-01-29T05:18:29.445Z   [2m703[0m |                   <p><strong>Your Form 1098 tax statement is ready.</strong> 
+View or download it now from the Documents Center. A printed copy has also been mailed.</p>
+2026-01-29T05:18:29.445Z   [2m704[0m |                   <p className="mt-2 text-yellow-300/80 text-xs">
+2026-01-29T05:18:29.445Z   [2m705[0m |                     ΓÜá∩╕Å <strong>IMPORTANT</strong> - If you received more 
+than one Form 1098 from CMG for this loan: Please use only the most recent form in the Documents Center.
+2026-01-29T05:18:29.445Z   [2m706[0m |                   </p>
+2026-01-29T05:18:29.445Z   [2m707[0m |                 </div>
+2026-01-29T05:18:29.445Z   [2m708[0m |               </div>
+2026-01-29T05:18:29.446Z   [2m709[0m |             </div>
+2026-01-29T05:18:29.446Z   [2m710[0m |           </div>
+2026-01-29T05:18:29.446Z   [2m711[0m |         </motion.div>
+2026-01-29T05:18:29.446Z   [2m712[0m |       </div>
+2026-01-29T05:18:29.446Z   [2m713[0m |     </section>
+2026-01-29T05:18:29.446Z   [2m714[0m |   )
+2026-01-29T05:18:29.446Z   [2m715[0m | }
+2026-01-29T05:18:29.447Z   [2m716[0m | 
+2026-01-29T05:18:29.447Z   [2m717[0m | // Team Section
+2026-01-29T05:18:29.447Z   [2m718[0m | const TeamSection = () => {
+2026-01-29T05:18:29.447Z   [2m719[0m |   const teams = [
+2026-01-29T05:18:29.447Z   [2m720[0m |     {
+2026-01-29T05:18:29.447Z   [2m721[0m |       name: 'Product',
+2026-01-29T05:18:29.447Z   [2m722[0m |       color: 'cmg-green',
+2026-01-29T05:18:29.447Z   [2m723[0m |       members: [
+2026-01-29T05:18:29.447Z   [2m724[0m |         { name: 'Dave Perras', title: 'Senior Product Manager' },
+2026-01-29T05:18:29.447Z   [2m725[0m |         { name: 'Brooke Terry', title: 'Senior Business Analyst' },
+2026-01-29T05:18:29.447Z   [2m726[0m |         { name: 'Cathy Hodgson', title: 'Senior Business Analyst' },
+2026-01-29T05:18:29.447Z   [2m727[0m |         { name: 'Alexandra Zajaczkowski', title: 'Lead Tech Business Analyst' 
+},
+2026-01-29T05:18:29.447Z   [2m728[0m |         { name: 'Silvia Ledo', title: 'Business Analyst' },
+2026-01-29T05:18:29.447Z   [2m729[0m |         { name: 'Yaskara Rabelo', title: 'Business Analyst' },
+2026-01-29T05:18:29.447Z   [2m730[0m |         { name: 'Kelli Jablonsky', title: 'Business Analyst' },
+2026-01-29T05:18:29.447Z   [2m731[0m |       ],
+2026-01-29T05:18:29.447Z   [2m732[0m |     },
+2026-01-29T05:18:29.447Z   [2m733[0m |     {
+2026-01-29T05:18:29.448Z   [2m734[0m |       name: 'Development',
+2026-01-29T05:18:29.448Z   [2m735[0m |       color: 'neon-blue',
+2026-01-29T05:18:29.448Z   [2m736[0m |       members: [
+2026-01-29T05:18:29.448Z   [2m737[0m |         { name: 'Stephen Colvin', title: 'Software Engineering Manager' },
+2026-01-29T05:18:29.448Z   [2m738[0m |         { name: 'Cory Chandler', title: 'Principal Front End Developer' },
+2026-01-29T05:18:29.448Z   [2m739[0m |         { name: 'Ashwin Ramathirtham', title: 'Senior Full Stack Developer' },
+2026-01-29T05:18:29.448Z   [2m740[0m |         { name: 'Scott McChesney', title: 'Principal Software Engineer' },
+2026-01-29T05:18:29.448Z   [2m741[0m |       ],
+2026-01-29T05:18:29.448Z   [2m742[0m |     },
+2026-01-29T05:18:29.448Z   [2m743[0m |     {
+2026-01-29T05:18:29.448Z   [2m744[0m |       name: 'Quality Assurance',
+2026-01-29T05:18:29.448Z   [2m745[0m |       color: 'cyber-purple',
+2026-01-29T05:18:29.448Z   [2m746[0m |       members: [
+2026-01-29T05:18:29.448Z   [2m747[0m |         { name: 'Matt Moreira', title: 'Quality Assurance Manager' },
+2026-01-29T05:18:29.448Z   [2m748[0m |         { name: 'Ben Morgen', title: 'Senior QA Analyst' },
+2026-01-29T05:18:29.448Z   [2m749[0m |       ],
+2026-01-29T05:18:29.448Z   [2m750[0m |     },
+2026-01-29T05:18:29.448Z   [2m751[0m |     {
+2026-01-29T05:18:29.448Z   [2m752[0m |       name: 'Experience Design',
+2026-01-29T05:18:29.449Z   [2m753[0m |       color: 'yellow',
+2026-01-29T05:18:29.449Z   [2m754[0m |       members: [
+2026-01-29T05:18:29.449Z   [2m755[0m |         { name: 'Andy Garcia', title: 'VP, Experience Design' },
+2026-01-29T05:18:29.449Z   [2m756[0m |         { name: 'Jon Hyzy', title: 'Experience Design Lead' },
+2026-01-29T05:18:29.449Z   [2m757[0m |       ],
+2026-01-29T05:18:29.449Z   [2m758[0m |     },
+2026-01-29T05:18:29.449Z   [2m759[0m |   ]
+2026-01-29T05:18:29.449Z   [2m760[0m | 
+2026-01-29T05:18:29.449Z   [2m761[0m |   return (
+2026-01-29T05:18:29.449Z   [2m762[0m |     <section className="py-24 relative" id="team">
+2026-01-29T05:18:29.449Z   [2m763[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.449Z   [2m764[0m |         <SectionHeader
+2026-01-29T05:18:29.449Z   [2m765[0m |           icon={Users}
+2026-01-29T05:18:29.449Z   [2m766[0m |           title="CX Team"
+2026-01-29T05:18:29.449Z   [2m767[0m |           description="The talented team behind this sprint release"
+2026-01-29T05:18:29.449Z   [2m768[0m |           id="team-header"
+2026-01-29T05:18:29.449Z   [2m769[0m |         />
+2026-01-29T05:18:29.449Z   [2m770[0m | 
+2026-01-29T05:18:29.449Z   [2m771[0m |         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+2026-01-29T05:18:29.449Z   [2m772[0m |           {teams.map((team, teamIdx) => (
+2026-01-29T05:18:29.449Z   [2m773[0m |             <motion.div
+2026-01-29T05:18:29.449Z   [2m774[0m |               key={team.name}
+2026-01-29T05:18:29.450Z   [2m775[0m |               initial={{ opacity: 0, y: 20 }}
+2026-01-29T05:18:29.450Z   [2m776[0m |               whileInView={{ opacity: 1, y: 0 }}
+2026-01-29T05:18:29.450Z   [2m777[0m |               viewport={{ once: true }}
+2026-01-29T05:18:29.450Z   [2m778[0m |               transition={{ delay: teamIdx * 0.1 }}
+2026-01-29T05:18:29.450Z   [2m779[0m |               className="glass-card rounded-2xl p-6"
+2026-01-29T05:18:29.450Z   [2m780[0m |             >
+2026-01-29T05:18:29.450Z   [2m781[0m |               <h3 className={`text-lg font-semibold mb-4 ${
+2026-01-29T05:18:29.450Z   [2m782[0m |                 team.color === 'cmg-green' ? 'text-cmg-green' :
+2026-01-29T05:18:29.450Z   [2m783[0m |                 team.color === 'neon-blue' ? 'text-neon-blue' :
+2026-01-29T05:18:29.450Z   [2m784[0m |                 team.color === 'cyber-purple' ? 'text-cyber-purple' :
+2026-01-29T05:18:29.450Z   [2m785[0m |                 'text-yellow-400'
+2026-01-29T05:18:29.450Z   [2m786[0m |               }`}>
+2026-01-29T05:18:29.450Z   [2m787[0m |                 {team.name}
+2026-01-29T05:18:29.450Z   [2m788[0m |               </h3>
+2026-01-29T05:18:29.450Z   [2m789[0m |               <div className="space-y-3">
+2026-01-29T05:18:29.450Z   [2m790[0m |                 {team.members.map((member) => (
+2026-01-29T05:18:29.450Z   [2m791[0m |                   <div key={member.name} className="flex items-center gap-3">
+2026-01-29T05:18:29.450Z   [2m792[0m |                     <div className={`w-8 h-8 rounded-full flex items-center 
+justify-center text-sm font-bold ${
+2026-01-29T05:18:29.451Z   [2m793[0m |                       team.color === 'cmg-green' ? 'bg-cmg-green/20 
+text-cmg-green' :
+2026-01-29T05:18:29.451Z   [2m794[0m |                       team.color === 'neon-blue' ? 'bg-neon-blue/20 
+text-neon-blue' :
+2026-01-29T05:18:29.451Z   [2m795[0m |                       team.color === 'cyber-purple' ? 'bg-cyber-purple/20 
+text-cyber-purple' :
+2026-01-29T05:18:29.452Z   [2m796[0m |                       'bg-yellow-400/20 text-yellow-400'
+2026-01-29T05:18:29.452Z   [2m797[0m |                     }`}>
+2026-01-29T05:18:29.452Z   [2m798[0m |                       {member.name.split(' ').map(n => n[0]).join('')}
+2026-01-29T05:18:29.452Z   [2m799[0m |                     </div>
+2026-01-29T05:18:29.452Z   [2m800[0m |                     <div>
+2026-01-29T05:18:29.452Z   [2m801[0m |                       <p className="text-sm font-medium">{member.name}</p>
+2026-01-29T05:18:29.452Z   [2m802[0m |                       <p className="text-xs text-gray-500">{member.title}</p>
+2026-01-29T05:18:29.452Z   [2m803[0m |                     </div>
+2026-01-29T05:18:29.452Z   [2m804[0m |                   </div>
+2026-01-29T05:18:29.452Z   [2m805[0m |                 ))}
+2026-01-29T05:18:29.452Z   [2m806[0m |               </div>
+2026-01-29T05:18:29.452Z   [2m807[0m |             </motion.div>
+2026-01-29T05:18:29.452Z   [2m808[0m |           ))}
+2026-01-29T05:18:29.452Z   [2m809[0m |         </div>
+2026-01-29T05:18:29.452Z   [2m810[0m |       </div>
+2026-01-29T05:18:29.452Z   [2m811[0m |     </section>
+2026-01-29T05:18:29.452Z   [2m812[0m |   )
+2026-01-29T05:18:29.452Z   [2m813[0m | }
+2026-01-29T05:18:29.452Z   [2m814[0m | 
+2026-01-29T05:18:29.452Z   [2m815[0m | // Footer
+2026-01-29T05:18:29.453Z   [2m816[0m | const Footer = () => {
+2026-01-29T05:18:29.453Z   [2m817[0m |   return (
+2026-01-29T05:18:29.453Z   [2m818[0m |     <footer className="py-12 border-t border-gray-800">
+2026-01-29T05:18:29.453Z   [2m819[0m |       <div className="max-w-6xl mx-auto px-6">
+2026-01-29T05:18:29.453Z   [2m820[0m |         <div className="flex flex-col md:flex-row items-center 
+justify-between gap-4">
+2026-01-29T05:18:29.453Z   [2m821[0m |           <div className="flex items-center gap-3">
+2026-01-29T05:18:29.453Z   [2m822[0m |             <div className="w-10 h-10 rounded-lg bg-gradient-to-br 
+from-cmg-green to-neon-blue flex items-center justify-center font-bold text-white">
+2026-01-29T05:18:29.453Z   [2m823[0m |               CMG
+2026-01-29T05:18:29.453Z   [2m824[0m |             </div>
+2026-01-29T05:18:29.453Z   [2m825[0m |             <div>
+2026-01-29T05:18:29.453Z   [2m826[0m |               <p className="font-semibold">CMG Home Loans</p>
+2026-01-29T05:18:29.453Z   [2m827[0m |               <p className="text-xs text-gray-500">Consumer Experience 
+Team</p>
+2026-01-29T05:18:29.453Z   [2m828[0m |             </div>
+2026-01-29T05:18:29.453Z   [2m829[0m |           </div>
+2026-01-29T05:18:29.453Z   [2m830[0m |           <div className="text-center md:text-right">
+2026-01-29T05:18:29.453Z   [2m831[0m |             <p className="text-sm text-gray-400">
+2026-01-29T05:18:29.453Z   [2m832[0m |               Sprint Release 2026.01.28 ΓÇó <span 
+className="text-gray-600">CONFIDENTIAL</span>
+2026-01-29T05:18:29.453Z   [2m833[0m |             </p>
+2026-01-29T05:18:29.454Z   [2m834[0m |             <p className="text-xs text-gray-600 mt-1">
+2026-01-29T05:18:29.454Z   [2m835[0m |               ┬⌐ {new Date().getFullYear()} CMG Mortgage, Inc.
+2026-01-29T05:18:29.454Z   [2m836[0m |             </p>
+2026-01-29T05:18:29.454Z   [2m837[0m |           </div>
+2026-01-29T05:18:29.454Z   [2m838[0m |         </div>
+2026-01-29T05:18:29.454Z   [2m839[0m |       </div>
+2026-01-29T05:18:29.454Z   [2m840[0m |     </footer>
+2026-01-29T05:18:29.454Z   [2m841[0m |   )
+2026-01-29T05:18:29.454Z   [2m842[0m | }
+2026-01-29T05:18:29.454Z   [2m843[0m | 
+2026-01-29T05:18:29.454Z   [2m844[0m | // Main Page
+2026-01-29T05:18:29.454Z   [2m845[0m | export default function Home() {
+2026-01-29T05:18:29.454Z       : [33;1m                        ^^|^[0m
+2026-01-29T05:18:29.454Z       :                           [33;1m`-- [33;1m`Home` redefined here[0m[0m
+2026-01-29T05:18:29.454Z   [2m846[0m |   return (
+2026-01-29T05:18:29.454Z   [2m847[0m |     <main className="relative">
+2026-01-29T05:18:29.454Z   [2m848[0m |       <FloatingParticles />
+2026-01-29T05:18:29.454Z       `----
+2026-01-29T05:18:29.454Z  
+2026-01-29T05:18:29.454Z  Import trace for requested module:
+2026-01-29T05:18:29.454Z  ./src/app/page.tsx
+2026-01-29T05:18:29.454Z  
+2026-01-29T05:18:29.467Z  
+2026-01-29T05:18:29.467Z  > Build failed because of webpack errors
+2026-01-29T05:18:29.467Z  Error: Command "npm run build" exited with 1
+https://cx-sprint-release-2025-ilqrquade-cmgprojects.vercel.app
